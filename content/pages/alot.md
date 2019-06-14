@@ -2,6 +2,6 @@
 template: page
 title: Alot
 slug: alot
-draft: true
+draft: false
 ---
 This is a lot of text
