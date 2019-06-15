@@ -1,9 +1,9 @@
 'use strict';
 
 module.exports = {
-  url: 'https://alotisnotanumber.info',
-  title: 'Alot is not a number',
-  subtitle: 'Alot is not a number - a resource of common grandma mistakes',
+  url: 'https://alotisnotaword.info',
+  title: 'Alot is not a word',
+  subtitle: 'Alot is not a word - a resource of common grandma mistakes',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
