@@ -49,17 +49,16 @@ module.exports = {
             }
           }
         `,
-        feeds: [{
-          serialize: ({ query: { site, allMarkdownRemark } }) => (
-            allMarkdownRemark.edges.map((edge) => Object.assign({}, edge.node.frontmatter, {
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => allMarkdownRemark.edges.map((edge) => Object.assign({}, edge.node.frontmatter, {
               description: edge.node.frontmatter.description,
               date: edge.node.frontmatter.date,
               url: site.siteMetadata.site_url + edge.node.fields.slug,
               guid: site.siteMetadata.site_url + edge.node.fields.slug,
               custom_elements: [{ 'content:encoded': edge.node.html }]
-            }))
-          ),
-          query: `
+            })),
+            query: `
               {
                 allMarkdownRemark(
                   limit: 1000,
@@ -84,8 +83,9 @@ module.exports = {
                 }
               }
             `,
-          output: '/rss.xml'
-        }]
+            output: '/rss.xml'
+          }
+        ]
       }
     },
     {
@@ -119,7 +119,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
-        modulePath: `${__dirname}/src/cms/index.js`,
+        modulePath: `${__dirname}/src/cms/index.js`
       }
     },
     {
@@ -127,9 +127,9 @@ module.exports = {
       options: {
         trackingIds: [siteConfig.googleAnalyticsId],
         pluginConfig: {
-          head: true,
-        },
-      },
+          head: true
+        }
+      }
     },
     {
       resolve: 'gatsby-plugin-sitemap',
@@ -171,8 +171,8 @@ module.exports = {
         background_color: '#FFF',
         theme_color: '#F7A046',
         display: 'standalone',
-        icon: 'static/photo.jpg'
-      },
+        icon: 'static/site-icon.svg'
+      }
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
@@ -182,10 +182,10 @@ module.exports = {
       options: {
         postCssPlugins: [...postCssPlugins],
         cssLoaderOptions: {
-          camelCase: false,
+          camelCase: false
         }
       }
     },
-    'gatsby-plugin-flow',
+    'gatsby-plugin-flow'
   ]
 };

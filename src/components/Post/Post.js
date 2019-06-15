@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import { Link } from 'gatsby';
+import Header from './Header';
 import Author from './Author';
 import Comments from './Comments';
 import Content from './Content';
@@ -20,15 +21,17 @@ const Post = ({ post }: Props) => {
 
   return (
     <div className={styles['post']}>
-      <Link className={styles['post__home-button']} to="/">All Articles</Link>
-
+      <Link className={styles['post__home-button']} to="/">
+        All Articles
+      </Link>
+      <Header title={title} />
       <div className={styles['post__content']}>
         <Content body={html} title={title} />
       </div>
 
       <div className={styles['post__footer']}>
         <Meta date={date} />
-        {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
+        {/* {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />} */}
         <Author />
       </div>
 

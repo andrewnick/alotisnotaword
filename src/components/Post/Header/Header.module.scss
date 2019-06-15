@@ -1,0 +1,55 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &__title {
+    text-align: center;
+    margin: 0;
+    font-size: $typographic-base-font-size * 2;
+    max-width: $layout-post-width;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    @include line-height(1.65);
+  }
+
+  &__icon {
+    fill: #000;
+    width: 100px;
+    height: 100px;
+    color: #222;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    animation: icon 2s ease-out 1s;
+    animation-fill-mode: forwards;
+    @include padding-equal(2);
+  }
+}
+
+@keyframes icon {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@include breakpoint-md {
+  .header {
+    &__title {
+      font-size: $typographic-base-font-size * 3;
+      @include line-height(2.25);
+      @include margin-top(2.25);
+      @include margin-bottom(1.5);
+    }
+  }
+}
