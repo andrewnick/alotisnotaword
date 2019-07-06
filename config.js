@@ -7,25 +7,25 @@ module.exports = {
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 1,
-  googleAnalyticsId: '',
-  menu: [
-    {
-      label: 'Articles',
-      path: '/'
-    },
-    {
-      label: 'About me',
-      path: '/pages/about'
-    },
-    {
-      label: 'Contact me',
-      path: '/pages/contacts'
-    }
-  ],
+  googleAnalyticsId: 'UA-143338906-1',
+  // menu: [
+  //   {
+  //     label: 'Articles',
+  //     path: '/'
+  //   },
+  //   {
+  //     label: 'About me',
+  //     path: '/pages/about'
+  //   },
+  //   {
+  //     label: 'Contact me',
+  //     path: '/pages/contacts'
+  //   }
+  // ],
   author: {
-    name: 'John Doe',
+    name: 'Sarah Nicholas',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: '',
     contacts: {
       email: '#',
       telegram: '#',
