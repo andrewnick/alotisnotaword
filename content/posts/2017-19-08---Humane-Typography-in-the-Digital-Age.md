@@ -17,7 +17,7 @@ tags:
 ---
 ![A picture of clouds](/media/cloud-pic.jpg "Weather")
 
-
+_This is weather. It is clouds. It is lightning. It is the sunshine._ 
 
 
 
