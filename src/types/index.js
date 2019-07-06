@@ -32,6 +32,7 @@ export type Node = {
   },
   html: string,
   homepage: Boolean,
+  heading: string,
   id: string
 };
 

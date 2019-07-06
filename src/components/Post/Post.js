@@ -17,12 +17,14 @@ type Props = {
 const Post = ({ post }: Props) => {
   const { html } = post;
   const { tagSlugs, slug } = post.fields;
-  const { tags, title, date } = post.frontmatter;
+  const {
+    tags, title, heading, date
+  } = post.frontmatter;
 
   return (
     <div className={styles['post']}>
       <Menu />
-      <Header title={title} />
+      <Header title={title} heading={heading} />
       <div className={styles['post__content']}>
         <Content body={html} title={title} />
       </div>

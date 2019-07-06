@@ -5,6 +5,8 @@ backend:
 media_folder: "static/media"
 public_folder: "/media"
 
+logo_url: https://your-site.com/static/site-icon.svg
+
 collections:
   - name: "posts"
     label: "Posts"
@@ -13,7 +15,8 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template", name: "template", widget: "hidden", default: "post"}
-      - {label: "Title", name: "title", widget: "markdown", buttons: ["bold", "italic"]}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Heading", name: "heading", widget: "string", required: false}
       - {label: "Menu Title", name: "menu-title", widget: "string", required: false}
       - {label: "Slug", name: "slug", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean", default: true}

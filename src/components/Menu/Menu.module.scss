@@ -31,11 +31,15 @@
     top: 30px;
     right: 30px;
     cursor: pointer;
+    opacity: 0;
+    animation: icon 2s ease-out 1s;
+    animation-fill-mode: forwards;
   }
 
   &__items {
     height: 100%;
     background: #fff;
+    padding: 20px;
   }
 
   &__item {
@@ -44,6 +48,7 @@
     align-items: center;
     flex-direction: column;
     height: 100%;
+    text-align: center;
 
     &__link {
       font-size: $typographic-base-font-size * 1.375;
@@ -52,5 +57,11 @@
   }
 }
 
-@include breakpoint-md {
+@keyframes icon {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
