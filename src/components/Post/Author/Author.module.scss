@@ -15,6 +15,10 @@
       text-decoration: underline;
     }
   }
+
+  &__name {
+    display: block;
+  }
 }
 
 @include breakpoint-sm {
@@ -22,5 +26,4 @@
     margin-left: auto;
     margin-right: auto;
   }
-
 }
