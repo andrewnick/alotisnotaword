@@ -1,7 +1,7 @@
 ---
 template: post
 title: Perfecting the Art of Perfection
-menu-title: Perfecting the Art of Perfection
+# menu-title: Perfecting the Art of Perfection
 slug: perfecting-the-art-of-perfection
 draft: false
 homepage: false
