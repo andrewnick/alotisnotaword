@@ -11,7 +11,7 @@ const Author = () => {
       <p className={styles['author__bio']}>
         {author.bio}
         <span className={styles['author__name']}>
-          <strong className>{author.name}</strong>
+          <strong>{author.name}</strong>
         </span>
       </p>
     </div>

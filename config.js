@@ -6,7 +6,7 @@ module.exports = {
   subtitle: 'Alot is not a word - a resource of common grandma mistakes',
   copyright: '© All rights reserved.',
   disqusShortname: '',
-  postsPerPage: 4,
+  postsPerPage: 1,
   googleAnalyticsId: '',
   menu: [
     {

@@ -28,9 +28,10 @@ export type Node = {
     description?: string,
     category?: string,
     tags?: string[],
-    title: string,
+    title: string
   },
   html: string,
+  homepage: Boolean,
   id: string
 };
 
@@ -42,7 +43,7 @@ export type Edges = Array<Edge>;
 
 export type AllMarkdownRemark = {
   allMarkdownRemark: {
-    edges: Edges,
+    edges: Edges
   },
   group: {
     fieldValue: string,

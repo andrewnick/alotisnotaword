@@ -2,68 +2,44 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
-import Sidebar from '../components/Sidebar';
-import Feed from '../components/Feed';
-import Page from '../components/Page';
-import Pagination from '../components/Pagination';
+import Post from '../components/Post';
 import { useSiteMetadata } from '../hooks';
 import type { PageContext, AllMarkdownRemark } from '../types';
 
 type Props = {
-  data: AllMarkdownRemark,
-  pageContext: PageContext
+  data: AllMarkdownRemark
 };
 
-const IndexTemplate = ({ data, pageContext }: Props) => {
+const IndexTemplate = ({ data }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
 
-  const {
-    currentPage,
-    hasNextPage,
-    hasPrevPage,
-    prevPagePath,
-    nextPagePath
-  } = pageContext;
-
-
   const { edges } = data.allMarkdownRemark;
-  const pageTitle = currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : siteTitle;
 
   return (
-    <Layout title={pageTitle} description={siteSubtitle}>
-      <Sidebar isIndex />
-      <Page>
-        <Feed edges={edges} />
-        <Pagination
-          prevPagePath={prevPagePath}
-          nextPagePath={nextPagePath}
-          hasPrevPage={hasPrevPage}
-          hasNextPage={hasNextPage}
-        />
-      </Page>
+    <Layout title={siteTitle} description={siteSubtitle}>
+      {/* {edges.map((edge) => ( */}
+      {edges && <Post post={edges[0].node} />}
+      {/* ))} */}
     </Layout>
   );
 };
 
 export const query = graphql`
-  query IndexTemplate($postsLimit: Int!, $postsOffset: Int!) {
-    allMarkdownRemark(
-        limit: $postsLimit,
-        skip: $postsOffset,
-        filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } },
-        sort: { order: DESC, fields: [frontmatter___date] }
-      ){
+  query IndexTemplate($postsLimit: Int!) {
+    allMarkdownRemark(limit: $postsLimit, filter: { frontmatter: { homepage: { eq: true } } }) {
       edges {
         node {
+          id
+          html
           fields {
             slug
-            categorySlug
+            tagSlugs
           }
           frontmatter {
-            title
             date
-            category
             description
+            tags
+            title
           }
         }
       }
