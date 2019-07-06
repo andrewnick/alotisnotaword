@@ -8,20 +8,12 @@ module.exports = {
   disqusShortname: '',
   postsPerPage: 1,
   googleAnalyticsId: 'UA-143338906-1',
-  // menu: [
-  //   {
-  //     label: 'Articles',
-  //     path: '/'
-  //   },
-  //   {
-  //     label: 'About me',
-  //     path: '/pages/about'
-  //   },
-  //   {
-  //     label: 'Contact me',
-  //     path: '/pages/contacts'
-  //   }
-  // ],
+  menu: [
+    {
+      label: 'Alotisnotaword',
+      path: '/'
+    }
+  ],
   author: {
     name: 'Sarah Nicholas',
     photo: '/photo.jpg',
