@@ -1,0 +1,56 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.menu {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  &__closed {
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    top: 30px;
+    right: 30px;
+    left: auto;
+    z-index: 1;
+
+    .menu__items {
+      display: none;
+      z-index: -1;
+    }
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+  }
+
+  &__items {
+    height: 100%;
+    background: #fff;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+
+    &__link {
+      font-size: $typographic-base-font-size * 1.375;
+      margin-bottom: 1.375rem;
+    }
+  }
+}
+
+@include breakpoint-md {
+}

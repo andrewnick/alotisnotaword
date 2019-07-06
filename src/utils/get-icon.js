@@ -26,6 +26,9 @@ const getIcon = (name: string) => {
     case 'down-arrow':
       icon = ICONS.DOWNARROW;
       break;
+    case 'menu':
+      icon = ICONS.MENU;
+      break;
     default:
       icon = {};
       break;

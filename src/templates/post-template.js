@@ -21,7 +21,6 @@ const PostTemplate = ({ data }: Props) => {
   );
 };
 
-
 export const query = graphql`
   query PostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -40,6 +39,5 @@ export const query = graphql`
     }
   }
 `;
-
 
 export default PostTemplate;
