@@ -1,8 +1,10 @@
 ---
 title: "Johannes Gutenberg: The Birth of Movable Type"
+menu-title: "Johannes Gutenberg: The Birth of Movable Type"
 date: "2017-08-18T22:12:03.284Z"
 template: "post"
 draft: false
+homepage: false
 slug: "the-birth-of-movable-type"
 category: "Typography"
 tags:

@@ -21,6 +21,7 @@ const useMenuList = () => {
                 description
                 category
                 title
+                menu_title
               }
             }
           }
