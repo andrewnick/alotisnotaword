@@ -1,6 +1,6 @@
 ---
 template: post
-title: Alot is <strong>not</strong> a word
+title: Alot is **not** a word
 menu-title: Alot is not a word
 slug: alot
 draft: false
