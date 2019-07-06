@@ -1,6 +1,7 @@
 ---
 template: post
 title: '''Whether'' and ''weather'' are DIFFERENT WORDS.'
+heading: '''Whether'' and ''weather'' are <strong> DIFFERENT WORDS. </strong>'
 menu-title: Whether and Weather
 slug: whether-and-weather
 draft: false
