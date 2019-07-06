@@ -1,5 +1,6 @@
 ---
 template: post
+title: Alot is **not** a word
 menu-title: Alot is not a word
 slug: alot
 draft: false
