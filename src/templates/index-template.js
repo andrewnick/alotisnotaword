@@ -17,9 +17,7 @@ const IndexTemplate = ({ data }: Props) => {
 
   return (
     <Layout title={siteTitle} description={siteSubtitle}>
-      {/* {edges.map((edge) => ( */}
       {edges && <Post post={edges[0].node} />}
-      {/* ))} */}
     </Layout>
   );
 };

@@ -10,7 +10,7 @@ type Props = {
 
 const Header = ({ title }: Props) => (
   <div className={styles['header']}>
-    <h1 className={styles['header__title']}>{title}</h1>
+    <h1 className={styles['header__title']} dangerouslySetInnerHTML={{ __html: title }} />
     <div className={styles['header__icon']}>
       <Icon icon={getIcon('down-arrow')} />
     </div>
