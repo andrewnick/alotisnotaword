@@ -9,16 +9,16 @@ type Props = {
   heading?: string
 };
 
-const Header = ({ title, heading }: Props) => {
-  const headerTitle = heading || title;
-  return (
+const Header = ({ title, heading }: Props) => (
     <div className={styles['header']}>
-      <h1 className={styles['header__title']} dangerouslySetInnerHTML={{ __html: headerTitle }} />
+      <h1
+        className={styles['header__title']}
+        dangerouslySetInnerHTML={{ __html: heading || title }}
+      />
       <div className={styles['header__icon']}>
         <Icon icon={getIcon('down-arrow')} />
       </div>
     </div>
-  );
-};
+);
 
 export default Header;

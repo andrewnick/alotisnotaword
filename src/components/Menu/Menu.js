@@ -26,9 +26,7 @@ const Menu = () => {
               to={edge.node.fields.slug}
               key={edge.node.id}
             >
-              {edge.node.frontmatter.menu_title
-                ? edge.node.frontmatter.menu_title
-                : edge.node.frontmatter.title}
+              {edge.node.frontmatter.menu_title || edge.node.frontmatter.title}
             </Link>
           ))}
         </div>
