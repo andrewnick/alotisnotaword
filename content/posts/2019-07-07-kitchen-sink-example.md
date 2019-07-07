@@ -4,7 +4,7 @@ title: Kitchen Sink Example
 heading: Kitchen <b>Sink</b> <i>Example</i>
 menu-title: Kitchen Sink
 slug: kitchen-sink
-draft: false
+draft: true
 homepage: false
 date: 2019-07-07T02:38:16.694Z
 description: >-
