@@ -6,7 +6,7 @@ menu-title: Whether and Weather
 slug: whether-and-weather
 draft: false
 homepage: false
-date: '2017-08-19T22:40:32.169Z'
+date: '2019-07-07T22:40:32.169Z'
 description: Whether and weather are two different words.
 category: Words
 tags:
