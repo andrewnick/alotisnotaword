@@ -5,8 +5,6 @@ backend:
 media_folder: "static/media"
 public_folder: "/media"
 
-logo_url: https://alotisnotaword.info/icon/icon-48x48.png
-
 collections:
   - name: "posts"
     label: "Posts"
