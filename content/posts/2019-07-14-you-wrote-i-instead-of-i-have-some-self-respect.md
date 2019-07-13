@@ -3,7 +3,7 @@ template: post
 title: You wrote 'i' instead of 'I'? Have some self respect.
 menu-title: i
 slug: i
-draft: true
+draft: false
 homepage: false
 date: 2019-07-13T20:10:15.544Z
 description: Capitalising the first person pronoun.
