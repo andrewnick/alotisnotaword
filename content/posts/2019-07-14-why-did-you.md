@@ -1,7 +1,8 @@
 ---
 template: post
 title: Why did you '?.'?
-heading: '?.'
+heading: Why did you '?.'?
+menu-title: '?.'
 slug: foolstop
 draft: false
 homepage: false
